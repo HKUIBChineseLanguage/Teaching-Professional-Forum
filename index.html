@@ -1,1 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HKU IB Chinese Language Teaching Professional Forum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a href="#top" class="nav__brand">
+        <img src="images/Screenshot%202025-11-21%20at%204.02.14%20PM.png" alt="The University of Hong Kong" class="nav__logo">
+        <span class="nav__brand-text">
+          <span class="nav__brand-en">HKU Professional Forum</span>
+          <span class="nav__brand-zh">香港大學</span>
+        </span>
+      </a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#hero" class="nav__link">Home</a></li>
+        <li><a href="#details" class="nav__link">Forum Details</a></li>
+        <li><a href="#forums" class="nav__link">2025–2026 Forums</a></li>
+        <li><a href="#archive" class="nav__link">Archive</a></li>
+        <li><a href="#team" class="nav__link">Our Team</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__bg-pattern" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">The University of Hong Kong</p>
+          <h1 class="hero__title">
+            <span class="hero__title-line">HKU Professional Forum</span>
+            <span class="hero__title-line hero__title-line--accent">IB Chinese Language Teaching</span>
+          </h1>
+          <p class="hero__intro">
+            The <strong>HKU School-University Partnerships Office</strong> cordially invites the IB Chinese language
+            teaching community to join our professional development forums. Connect with educators, explore innovative
+            pedagogy, and strengthen practice across international education contexts.
+          </p>
+          <a href="#forums" class="btn btn--gold">Browse Past Forums</a>
+        </div>
+        <div class="hero__media">
+          <img
+            src="images/Screenshot%202022-09-12%20at%206.27.50%20AM.png"
+            alt="IB Professional forum at The University of Hong Kong"
+            class="hero__image"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="details" id="details">
+      <div class="container">
+        <h2 class="section-title section-title--navy">Forum Details</h2>
+        <p class="archive__subtitle" style="margin-bottom: 2rem;">Key information about the forum series</p>
+        <div class="details__grid">
+          <div class="details__image-wrap">
+            <img
+              src="images/Screenshot%202022-09-12%20at%206.27.50%20AM.png"
+              alt="Forum presentation in a lecture hall"
+              class="details__image"
+            >
+          </div>
+          <div class="details__card">
+            <ul class="details__list">
+              <li class="details__item">
+                <span class="details__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </span>
+                <div>
+                  <span class="details__label">Medium</span>
+                  <span class="details__value">Mandarin</span>
+                </div>
+              </li>
+              <li class="details__item">
+                <span class="details__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                </span>
+                <div>
+                  <span class="details__label">Format</span>
+                  <span class="details__value">Online Forum via Zoom</span>
+                </div>
+              </li>
+              <li class="details__item">
+                <span class="details__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                </span>
+                <div>
+                  <span class="details__label">Fee</span>
+                  <span class="details__value">Free of charge</span>
+                </div>
+              </li>
+              <li class="details__item">
+                <span class="details__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </span>
+                <div>
+                  <span class="details__label">Events</span>
+                  <span class="details__value">Browse the forum archive below to view past events</span>
+                </div>
+              </li>
+            </ul>
+            <p class="details__disclaimer">
+              <strong>**</strong> Due to copyright constraints, all forums do not provide videos or PPTs from the guest speakers.
+              (基於版權限制，所有論壇將不提供講者PPT，也不設錄影回放。謝謝！)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="forums" id="forums">
+      <div class="container">
+        <div class="forums__header">
+          <h2 class="forums__title">Past Forums — 2025–2026</h2>
+          <p class="forums__subtitle">Past events from the 2025–2026 academic year</p>
+        </div>
+        <div class="forums__list">
+          <article class="forum-card reveal">
+            <div class="forum-card__body">
+              <span class="forum-card__badge">Forum #6</span>
+              <h3 class="forum-card__topic">Supporting Student Well-being and Teacher Resilience: Building a Care-Centered Learning Community</h3>
+              <p class="forum-card__topic-zh">支援學生身心健康與教師職業韌性：建立關懷型學習社區</p>
+              <p class="forum-card__speaker">Ms. Carol Chen</p>
+              <p class="forum-card__date">10:00–11:30 am, 28 March 2026</p>
+              <a href="images/2025-26%236.pdf" class="btn btn--gold" target="_blank" rel="noopener noreferrer">View Past Event</a>
+            </div>
+          </article>
+
+          <article class="forum-card reveal">
+            <div class="forum-card__body">
+              <span class="forum-card__badge">Forum #5</span>
+              <h3 class="forum-card__topic">Effective Teaching Strategies Informed by the MYP e-Assessment</h3>
+              <p class="forum-card__topic-zh">從MYP電子化評估探討有效的教學策略</p>
+              <p class="forum-card__speaker">Ms. Monica Yin</p>
+              <p class="forum-card__date">10:00–11:30 am, 28 February 2026</p>
+              <a href="images/2025-26%235.pdf" class="btn btn--gold" target="_blank" rel="noopener noreferrer">View Past Event</a>
+            </div>
+          </article>
+
+          <article class="forum-card reveal">
+            <div class="forum-card__body">
+              <span class="forum-card__badge">Forum #4</span>
+              <h3 class="forum-card__topic">Unlocking the Power of Gen AI in Chinese Language Education — Insights from Singapore</h3>
+              <p class="forum-card__topic-zh">解鎖Gen AI賦能教育的中文教學——新加坡經驗分享</p>
+              <p class="forum-card__speaker">Ms. Grace Koh</p>
+              <p class="forum-card__date">10:00–11:30 am, 31 January 2026</p>
+              <a href="images/2025-26%234.pdf" class="btn btn--gold" target="_blank" rel="noopener noreferrer">View Past Event</a>
+            </div>
+          </article>
+
+          <article class="forum-card reveal">
+            <div class="forum-card__body">
+              <span class="forum-card__badge">Forum #3</span>
+              <h3 class="forum-card__topic">From Knowledge to Understanding: How TOK Empowers Deep Inquiry and Interdisciplinary Understanding in Language and Literature</h3>
+              <p class="forum-card__topic-zh">從知識到思維：TOK助力語言與文學的深度探究與跨學科理解</p>
+              <p class="forum-card__speaker">Dr. Kanghua Li</p>
+              <p class="forum-card__date">Date to be confirmed</p>
+              <a href="images/2025-26%233.pdf" class="btn btn--gold" target="_blank" rel="noopener noreferrer">View Past Event</a>
+            </div>
+          </article>
+
+          <article class="forum-card reveal">
+            <div class="forum-card__body">
+              <span class="forum-card__badge">Forum #2</span>
+              <h3 class="forum-card__topic">Chinese Curriculum Design and Teaching Strategies for Near-native Learners</h3>
+              <p class="forum-card__topic-zh">為近母語學習者量身定制中文課程和教學策略</p>
+              <p class="forum-card__speaker">Dr. Feifei Feng</p>
+              <p class="forum-card__date">10:00–11:30 am, 8 November 2025</p>
+              <a href="images/2025-26%232.pdf" class="btn btn--gold" target="_blank" rel="noopener noreferrer">View Past Event</a>
+            </div>
+          </article>
+
+          <article class="forum-card reveal">
+            <div class="forum-card__body">
+              <span class="forum-card__badge">Forum #1</span>
+              <h3 class="forum-card__topic">Reimagining Intercultural Literacy: Bridging Theory and Classroom Innovation</h3>
+              <p class="forum-card__topic-zh">文化共情與文本互聯：全球化課堂中的素養重構</p>
+              <p class="forum-card__speaker">Ms. Jessica Shan &amp; Ms. Yang Gu</p>
+              <p class="forum-card__date">10:00–11:30 am, 11 October 2025</p>
+              <a href="images/2025-26%231.pdf" class="btn btn--gold" target="_blank" rel="noopener noreferrer">View Past Event</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="archive" id="archive">
+      <div class="container">
+        <div class="archive__header">
+          <h2 class="section-title section-title--navy">Forum Archive</h2>
+          <p class="archive__subtitle">Browse forums from previous academic years</p>
+        </div>
+        <div class="archive__grid">
+          <a href="years/2019-2020.html" class="year-btn">
+            <svg class="year-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            2019–2020
+          </a>
+          <a href="years/2020-2021.html" class="year-btn">
+            <svg class="year-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            2020–2021
+          </a>
+          <a href="years/2021-2022.html" class="year-btn">
+            <svg class="year-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            2021–2022
+          </a>
+          <a href="years/2022-2023.html" class="year-btn">
+            <svg class="year-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            2022–2023
+          </a>
+          <a href="years/2023-2024.html" class="year-btn">
+            <svg class="year-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            2023–2024
+          </a>
+          <a href="years/2024-2025.html" class="year-btn">
+            <svg class="year-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            2024–2025
+          </a>
+          <a href="#forums" class="year-btn year-btn--current">
+            <svg class="year-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            2025–2026
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="container">
+        <h2 class="section-title section-title--navy">Our Team</h2>
+        <div class="team__grid">
+          <article class="team-card reveal">
+            <div class="team-card__avatar-wrap">
+              <img src="images/team/IMG_0485.PNG" alt="Dr. Louisa Yen" class="team-card__avatar">
+            </div>
+            <h3 class="team-card__name">Dr. Louisa Yen</h3>
+            <p class="team-card__role">IB Learning Community Coordinator</p>
+            <a href="mailto:lyen@hku.hk" class="team-card__email">lyen@hku.hk</a>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-card__avatar-wrap">
+              <img src="images/team/IMG_0487.PNG" alt="Dr. Sherlene Ng" class="team-card__avatar">
+            </div>
+            <h3 class="team-card__name">Dr. Sherlene Ng</h3>
+            <p class="team-card__role">Coordinator</p>
+            <p class="team-card__program">PGDE-Teaching Chinese as a Second Language</p>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-card__avatar-wrap">
+              <img src="images/team/IMG_0489.PNG" alt="Ms. Wendy Lai" class="team-card__avatar">
+            </div>
+            <h3 class="team-card__name">Ms. Wendy Lai</h3>
+            <p class="team-card__role">Coordinator</p>
+            <p class="team-card__program">MED-Teaching Chinese Language and Literature in International Education</p>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-card__avatar-wrap">
+              <img src="images/team/IMG_0491.PNG" alt="Professor Chun Lai" class="team-card__avatar">
+            </div>
+            <h3 class="team-card__name">Professor Chun Lai</h3>
+            <p class="team-card__role">Coordinator</p>
+            <p class="team-card__program">MED-Teaching Chinese as a Second Language</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="images/Screenshot%202025-11-21%20at%204.02.14%20PM.png" alt="HKU" class="footer__logo">
+        <span class="footer__name">The University of Hong Kong</span>
+      </div>
+      <nav class="footer__nav">
+        <a href="#hero">Home</a>
+        <a href="#forums">Forums</a>
+        <a href="#archive">Archive</a>
+        <a href="#team">Team</a>
+      </nav>
+      <p class="footer__copy">&copy; <span id="year">2026</span> The University of Hong Kong. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
