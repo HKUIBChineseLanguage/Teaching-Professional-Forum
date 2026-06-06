@@ -235,7 +235,6 @@ strong {
   color: var(--color-navy);
   flex-shrink: 0;
   margin-right: var(--space-sm);
-  overflow: hidden;
 }
 
 .nav__brand:hover {
@@ -244,8 +243,8 @@ strong {
 
 .nav__logo {
   width: auto;
-  height: 56px;
-  max-width: min(320px, 55vw);
+  height: 52px;
+  max-width: none;
   object-fit: contain;
   object-position: left center;
   background: transparent;
@@ -929,7 +928,7 @@ img[src=""] {
 
   .nav__logo {
     height: 64px;
-    max-width: 380px;
+    max-width: none;
   }
 
   .nav__toggle {
