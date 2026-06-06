@@ -921,6 +921,10 @@ img[src=""] {
 }
 
 @media (min-width: 768px) {
+  .nav__brand {
+    margin-right: 2.5rem;
+  }
+
   .nav__logo {
     height: 64px;
     max-width: 380px;
@@ -935,7 +939,8 @@ img[src=""] {
     position: static;
     flex-direction: row;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.5rem;
+    margin-left: auto;
     background: none;
     padding: 0;
     box-shadow: none;
@@ -943,7 +948,7 @@ img[src=""] {
   }
 
   .nav__link {
-    padding: 0.5rem 0.875rem;
+    padding: 0.5rem 1rem;
     border-bottom: none;
     border-radius: var(--radius-sm);
     transition: background var(--transition), color var(--transition);
@@ -956,18 +961,18 @@ img[src=""] {
 
   .hero__inner {
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: var(--space-xl);
   }
 
   .details__grid {
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: var(--space-xl);
     align-items: center;
   }
 
   .forum-card {
     grid-template-columns: 1fr auto;
-    padding: 2rem 2.5rem;
+    padding: var(--space-md) var(--space-lg);
     align-items: center;
   }
 
@@ -991,15 +996,19 @@ img[src=""] {
 
 @media (min-width: 1024px) {
   .hero {
-    padding-top: calc(var(--header-height) + 4rem);
-    padding-bottom: 5rem;
+    padding-top: calc(var(--header-height) + var(--space-xl));
+    padding-bottom: var(--space-section);
   }
 
   .details,
   .forums,
   .archive,
   .team {
-    padding-block: 5rem;
+    padding-block: var(--space-section);
+  }
+
+  .nav__brand {
+    margin-right: 3rem;
   }
 
   .team__grid {
