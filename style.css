@@ -254,7 +254,6 @@ strong {
   box-shadow: none;
   border-radius: 0;
   padding: 0;
-  clip-path: inset(0 1px 0 0);
 }
 
 .nav__brand:focus,
@@ -309,8 +308,9 @@ strong {
   left: 0;
   right: 0;
   flex-direction: column;
+  gap: var(--space-xs);
   background: var(--color-white);
-  padding: 1rem 1.25rem 1.5rem;
+  padding: var(--space-sm) var(--space-sm) var(--space-md);
   box-shadow: var(--shadow-md);
   border-bottom: 1px solid rgba(13, 71, 161, 0.08);
 }
@@ -423,6 +423,7 @@ strong {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  object-position: center;
   background: linear-gradient(135deg, var(--color-sky-pale), var(--color-forum-blue-alt));
 }
 
@@ -450,6 +451,7 @@ strong {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center;
   background: linear-gradient(135deg, var(--color-sky-light), var(--color-forum-blue));
 }
 
