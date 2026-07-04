@@ -218,7 +218,9 @@ strong {
   box-shadow: var(--shadow-sm);
 }
 
-.site-header--solid {
+.site-header--solid,
+.site-header.site-header--solid,
+.site-header.site-header--solid.is-scrolled {
   background: var(--color-white);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
