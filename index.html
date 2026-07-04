@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260704k">
+  <link rel="stylesheet" href="style.css?v=20260704m">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -33,7 +33,7 @@
   <main>
     <section class="hero" id="hero">
       <div class="hero__bg-pattern" aria-hidden="true"></div>
-      <div class="container hero__inner">
+      <div class="container hero__layout">
         <div class="hero__content">
           <p class="hero__eyebrow">The University of Hong Kong</p>
           <h1 class="hero__title">
@@ -45,7 +45,6 @@
             IB Chinese language educators to share research-informed practice, exchange pedagogical approaches, and
             strengthen professional learning across international school contexts.
           </p>
-          <a href="#forums" class="btn btn--primary">View Forums</a>
         </div>
         <div class="hero__media">
           <img
@@ -54,25 +53,17 @@
             class="hero__image"
           >
         </div>
-      </div>
-    </section>
-
-    <section class="details" id="details">
-      <div class="container">
-        <h2 class="section-title section-title--navy">Forum Details</h2>
-        <p class="section-lead">Essential information for participants and visitors</p>
-        <div class="details__grid">
-          <figure class="details__figure">
-            <div class="details__image-wrap">
-              <img
-                src="images/ChatGPT%20Image%20Jun%206%2C%202026%2C%2001_29_03%20PM.png"
-                alt="Illustration of a professional teaching forum"
-                class="details__image"
-              >
-            </div>
-            <figcaption class="details__image-caption">(AI generated image)</figcaption>
-          </figure>
-          <div class="details__card">
+        <figure class="hero__illustration" id="details">
+          <div class="hero__illustration-wrap">
+            <img
+              src="images/ChatGPT%20Image%20Jun%206%2C%202026%2C%2001_29_03%20PM.png"
+              alt="Illustration of a professional teaching forum"
+              class="hero__illustration-img"
+            >
+          </div>
+          <figcaption class="hero__illustration-caption">(AI generated image)</figcaption>
+        </figure>
+        <div class="details__card">
             <ul class="details__list">
               <li class="details__item">
                 <span class="details__icon" aria-hidden="true">
@@ -113,9 +104,8 @@
             </ul>
             <p class="details__disclaimer">
               <strong>**</strong> Due to copyright constraints, all forums do not provide videos or PPTs from the guest speakers.
-              (基於版權限制，所有論壇將不提供講者PPT，也不設錄影回放。謝謝！)
+              <span class="details__disclaimer-zh">基於版權限制，所有論壇將不提供講者PPT，也不設錄影回放。謝謝！</span>
             </p>
-          </div>
         </div>
       </div>
     </section>
@@ -451,7 +441,7 @@
       <div class="container">
         <div class="archive__header">
           <h2 class="section-title section-title--navy">Previous Forums</h2>
-          <p class="section-lead section-lead--centered">Access forum records from previous academic years</p>
+          <p class="section-lead section-lead--centered">Access forum information from previous academic years</p>
         </div>
         <div class="archive__grid">
           <a href="years/2019-2020.html" class="year-btn">
