@@ -270,6 +270,25 @@ strong {
   outline: none;
 }
 
+.nav__back-home {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-navy);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color var(--transition);
+}
+
+.nav__back-home:hover {
+  color: var(--color-gold);
+}
+
+.nav__back-home:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
 .nav__toggle {
   display: flex;
   flex-direction: column;
