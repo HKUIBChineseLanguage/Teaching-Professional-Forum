@@ -816,6 +816,22 @@ strong {
 
 .forum-card__speaker {
   font-weight: 500;
+  margin-bottom: 0.125rem;
+}
+
+.forum-card__affiliation {
+  font-size: var(--text-xs);
+  line-height: 1.55;
+  opacity: 0.82;
+  margin: 0 0 0.625rem;
+}
+
+.forum-card__speakers .forum-card__speaker:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.forum-card__speakers .forum-card__affiliation:last-child {
+  margin-bottom: 0.375rem;
 }
 
 .forum-card__date {
