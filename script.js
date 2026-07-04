@@ -12,6 +12,46 @@
   const revealElements = document.querySelectorAll('.reveal');
   const yearButtons = document.querySelectorAll('.year-btn');
   const yearEl = document.getElementById('year');
+  const yearArchiveNav = document.getElementById('year-archive-nav');
+
+  const YEAR_BOOK_ICON =
+    '<svg class="year-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">' +
+    '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>' +
+    '</svg>';
+
+  const ARCHIVE_YEARS = [
+    { id: '2019-2020', label: '2019–2020', href: '2019-2020.html' },
+    { id: '2020-2021', label: '2020–2021', href: '2020-2021.html' },
+    { id: '2021-2022', label: '2021–2022', href: '2021-2022.html' },
+    { id: '2022-2023', label: '2022–2023', href: '2022-2023.html' },
+    { id: '2023-2024', label: '2023–2024', href: '2023-2024.html' },
+    { id: '2024-2025', label: '2024–2025', href: '2024-2025.html' },
+    { id: '2025-2026', label: '2025–2026', href: '../index.html#forums' }
+  ];
+
+  function renderYearArchiveNav() {
+    if (!yearArchiveNav) return;
+
+    const currentYear = document.body.dataset.yearPage || '';
+    const buttons = ARCHIVE_YEARS.map(function (year) {
+      const isCurrent = year.id === currentYear;
+      return (
+        '<a href="' + year.href + '" class="year-btn' + (isCurrent ? ' year-btn--current' : '') + '"' +
+        (isCurrent ? ' aria-current="page"' : '') + '>' +
+        YEAR_BOOK_ICON + year.label +
+        '</a>'
+      );
+    }).join('');
+
+    yearArchiveNav.innerHTML =
+      '<div class="container">' +
+      '<div class="archive__header">' +
+      '<h2 class="section-title section-title--navy">Previous Forums</h2>' +
+      '<p class="section-lead section-lead--centered">Access forum information from previous academic years</p>' +
+      '</div>' +
+      '<div class="archive__grid">' + buttons + '</div>' +
+      '</div>';
+  }
 
   /* Footer year */
   if (yearEl) {
@@ -133,6 +173,7 @@
   });
 
   /* Init */
+  renderYearArchiveNav();
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
   setCurrentYear();
