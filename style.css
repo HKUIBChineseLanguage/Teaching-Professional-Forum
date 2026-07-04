@@ -218,6 +218,14 @@ strong {
   box-shadow: var(--shadow-sm);
 }
 
+.site-header--solid {
+  background: var(--color-white);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom-color: rgba(13, 71, 161, 0.1);
+  box-shadow: var(--shadow-sm);
+}
+
 .nav {
   display: flex;
   align-items: center;
