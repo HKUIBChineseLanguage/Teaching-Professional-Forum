@@ -26,7 +26,8 @@
     { id: '2022-2023', label: '2022–2023', href: '2022-2023.html' },
     { id: '2023-2024', label: '2023–2024', href: '2023-2024.html' },
     { id: '2024-2025', label: '2024–2025', href: '2024-2025.html' },
-    { id: '2025-2026', label: '2025–2026', href: '../index.html#forums' }
+    { id: '2025-2026', label: '2025–2026', href: '2025-2026.html' },
+    { id: '2026-2027', label: '2026–2027', href: '../index.html#featured' }
   ];
 
   function renderYearArchiveNav() {

@@ -613,6 +613,56 @@ strong {
   margin: 0 auto;
 }
 
+/* Featured poster (current forum)
+   ========================================================================== */
+
+.featured-poster {
+  padding: var(--space-section) 0;
+  background: var(--color-sky-pale);
+}
+
+.featured-poster__header {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.featured-poster__link {
+  display: block;
+  max-width: min(96vw, 64rem);
+  margin-inline: auto;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow:
+    0 8px 32px rgba(30, 58, 95, 0.18),
+    0 2px 8px rgba(30, 58, 95, 0.08);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.featured-poster__link:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 40px rgba(30, 58, 95, 0.22),
+    0 4px 12px rgba(30, 58, 95, 0.1);
+}
+
+.featured-poster__link:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+}
+
+.featured-poster__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.featured-poster__hint {
+  margin: var(--space-sm) auto 0;
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
 /* Participant feedback
    ========================================================================== */
 
